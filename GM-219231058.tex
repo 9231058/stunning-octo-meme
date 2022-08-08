@@ -1,0 +1,181 @@
+\documentclass{article}
+\author{Parham Alvani (9231058)}
+\title{GM-2 Problem Set No.1}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\emph{In The Name Of God}
+\end{center}
+\maketitle
+\end{titlepage}
+Problem 2: Part A)
+$$
+\alpha'(t)=(\cos(t)-t\sin(t),\sin(t)+t\cos(t),1)
+$$
+$$
+\alpha''(t)=(-2\sin(t)-t\cos(t),2\cos(t)-t\sin(t),0)
+$$
+$$
+T=\frac{\alpha'(t)}{|\alpha'(t)|}=\frac{\alpha'(t)}{\sqrt{t^2+2}}=\frac{\alpha'(0)}{\sqrt{2}}
+=
+\frac{(1,0,1)}{\sqrt{2}}
+=
+(\frac{1}{\sqrt{2}},0,\frac{1}{\sqrt{2}})
+$$
+$$
+B=\frac{\alpha'(t)\times\alpha''(t)}{|\alpha'(t)\times\alpha''(t)|}
+=
+\frac{\alpha'(0)\times\alpha''(0)}{|\alpha'(0)\times\alpha''(0)|}
+=
+\frac{(1,0,1)\times(0,2,0)}{|(1,0,1)\times(0,2,0)|}
+=
+\frac{(-2,0,2)}{2\sqrt{2}}
+=
+(-\frac{1}{\sqrt{2}},0,\frac{1}{\sqrt{2}})
+$$
+$$
+N=B \times T = (0,1,0)
+$$
+Part B)
+\begin{eqnarray}
+N'=\frac{dN}{ds}=\frac{d}{ds}(B \times T)=\frac{dB}{ds}\times T+B\times \frac{dT}{ds}\\
+=(-\tau N)\times T + B \times (\kappa N)\\
+=-\tau (N \times T) + \kappa (B \times N)\\
+=-\tau (-B) + \kappa(-T)\\
+=-\kappa T + \tau B
+\end{eqnarray}
+Problem 4: Part A)
+$$
+x^2-y^2+z^2=1
+\rightarrow^{(1,-1,1)}
+(1)-(1)+(1)=1
+$$
+Part B)
+$$
+x^2-y^2+z^2=1
+\rightarrow^{(1,-t-1,t+1)}
+1-(t+1)^2+(t+1)^2=1
+$$
+and
+$$
+x^2-y^2+z^2=1
+\rightarrow^{(-t+1,t-1,1)}
+(t-1)^2-(t-1)^2+1=1
+$$
+Problem 6:
+$$
+\left\lbrace\begin{array}{c}
+x^2+y^2+z^2=1\\
+x^2+z^2=1
+\end{array}\right.
+\rightarrow
+r(t)=(\pm\sqrt{1-2t^2},t,\pm t)
+$$
+we guess this curve on the plant y=z and y=-z , for example for for plant y=z we have:
+$$
+N(0,1,-1).r(t)
+=
+(0,1,-1).(\pm\sqrt{1-2t^2},t,t)
+=
+0
+$$
+Problem 7:
+$$
+\alpha'(t)=(3,3,6t^2)
+$$
+$$
+\alpha'(t).(1,0,1)
+=
+3+6t^2
+=
+(\sqrt{2})(\sqrt{18+36t^4})\cos(\theta)
+$$
+\textit{so problem is wrong ...}
+\newline
+Problem 8: Part A)
+\textit{not solved ...}
+\newline
+Part B)
+$$
+c=1,3a=2cb^2
+$$
+$$
+\alpha'(t)=(a,2bt,3ct^2)
+$$
+$$
+i+j=(1,1,0)
+$$
+$$
+\alpha'(t).(1,1,0)
+=
+a+2bt
+=
+\sqrt{2}\sqrt{a^2+4b^2t^2+9t^4}\cos(\theta)
+=
+\sqrt{2}\sqrt{a^2+6at^2+9t^4}\cos(\theta)
+$$
+$$
+a+2bt
+=
+\sqrt{2}
+(a+3t^2)
+\cos(\theta)
+$$
+\textit{so problem is wrong ...}
+\newline
+Problem 9:
+$$
+(\alpha\times\beta).(\alpha'\times\beta')
+=
+(\alpha\times\beta).(a(\alpha\times\beta)-a(\alpha\times\beta)=0
+$$
+Problem 10:
+$$
+\alpha'(t)=(2a\sin(t)\cos(t),a\cos^2(t)-a\sin^2(t),-a\sin(t))
+\alpha'(t)=(a\sin(2t),a\cos(2t),-a\sin(t))
+$$
+\begin{eqnarray}
+\alpha(t).\alpha'(t) = (a\sin^2(t),a\sin(t)\cos(t),a\cos(t)).(a\sin(2t),a\cos(2t),-a\sin(t))\\
+=(2a^2)(\sin^3(t).\cos(t))+(a^2)(\cos^3(t).\sin(t))-(a^2)(\cos(t).\sin^3(t))-(a^2)(\sin(t)\cos(t))\\
+=[(a^2)(\sin^3(t)\cos(t))+(a^2)(\sin(t)\cos^3(t)]-[(a^2)(\sin(t).\cos(t))\\
+=(a^2)(\sin(t)\cos(t)(\sin^2(t)+\cos^2(t)-1)\\
+=0
+\end{eqnarray}
+Problem 11:
+$$
+D\times B=(\tau T+\kappa B)\times B=\tau(T\times B)=\tau(-N)=\frac{dB}{ds}
+$$
+$$
+D\times N=(\tau T+\kappa B)\times N=\tau(T\times N)+\kappa(B\times N)=\tau(B)+\kappa(-T)=\frac{dN}{ds}
+$$
+$$
+D\times T=(\tau T+\kappa B)\times T=\kappa(B\times T)=\kappa(N)=\frac{dT}{ds}
+$$
+Problem 12:
+$$
+r'(t)=(\sin(t),\cos(t),f'(t))
+$$
+$$
+r''(t)=(\cos(t),-\sin(t),f''(t))
+$$
+$$
+r'(t)\times r''(t)
+\Rightarrow
+\left\langle
+\begin{array}{c}
+\sin(t)f''(t)-\cos(t)f'(t)=c\\
+\cos(t)f''(t)+\sin(t)f'(t)=c'
+\end{array}\right.
+$$
+$$
+(f''(t))^2+(f'(t))^2=c^2+c'^2=C^2
+$$
+and the solution of this differential equation is :
+$$
+f(t)=c_2-\frac{C}{\sqrt{\sec^2(c_1+t)}}
+$$
+and 
+$$
+f(t)=c_2+\frac{C}{\sqrt{\sec^2(c_1+t)}}
+$$
+\end{document}
